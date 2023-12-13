@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"> -->
+    <!-- <link href="D:\work\my_form_app\node_modules\material-icons\css\material-icons.css" rel="stylesheet"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Form Submission</title>
+</head>
+
+<body>
+
+    <div class="wholediv_row1">
+        <div class="row1">
+            <div class="business_query gray-bg formS">
+                <!-- icons -->
+                <div class="icon-part">
+                    <!-- <i class="fa fa-at"></i>                                     -->
+                    <span class="material-symbols-outlined font">
+                        alternate_email
+                    </span>
+                </div>
+                <!-- icon end -->
+                <!-- content -->
+                <div class="content-part">
+                    <h4 class="title">BUSINESS QUERIES</h4>
+                    <p style="font-size:15px;">In case you are interested in availing any of our professional HR
+                        Solutions and Services, please click here.</p>
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Business Enquiry
+                </button>
+                <!-- content end -->
+            </div>
+            <div class="job_seeker gray-bg formS">
+                <div class="icon-part">
+                    <span class="material-symbols-outlined font">
+                        mail
+                    </span>
+                </div>
+
+                <!-- icon end -->
+                <!-- content -->
+                <div class="content-part">
+                    <h4 class="title">JOB SEEKERS</h4>
+                    <p style="font-size:15px;">In case you wish to send your resume, please click here. Our team will
+                        revert to you as soon as your resume matches one of the job requirement.</p>
+
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        Job Seeker
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header"> <button type="button" class="close" data-bs-dismiss="modal"
+                                    aria-label="Close"> x </button> </div>
+                            <div class="modal-content quick_enq">
+                                <h2 class="hidden-xs">BUSINESS QUERIES</h2>
+                                <p>Provide us the required details below.</p>
+
+
+
+                                <div class="modal-body">
+                                    <form id="contact-form1" class="contact-form1">
+                                        <div class="rowsM1">
+                                            <div class="mr_b_10">
+                                                <div class="">
+                                                    <input type="text" class="in" id="name1" name="name"
+                                                        placeholder="Name" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="mr_b_10">
+                                                <div class="">
+                                                    <input type="text" class="in" id="phone1" name="phone"
+                                                        placeholder="Phone Number" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <input type="email" class="in" id="email1" name="email"
+                                                        placeholder="Email" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <input type="text" id="company" class="in" name="company"
+                                                        placeholder="Company Name" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <select name="services" class="in" id="service" required="">
+                                                        <option value="">Select Services</option>
+                                                        <option>Staffing </option>
+                                                        <option>Recruitment Process</option>
+                                                        <option>Training and Placement</option>
+                                                        <option>IT Staff Amplification </option>
+                                                        <option>IT Projects </option>
+                                                        <option>Placement Cell </option>
+                                                        <option>Onsite Consultant </option>
+                                                        <option>Vendor Services </option>
+                                                    </select> <i class="fa fa-caret-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <select name="employess" class="in" id="employee" required="">
+                                                        <option value="">Number of Employess</option>
+                                                        <option>1-10 </option>
+                                                        <option>11-50</option>
+                                                        <option>51-200</option>
+                                                        <option>201-500 </option>
+                                                        <option>500-1000 </option>
+                                                        <option>1001+ </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <input type="text" id="location" class="in" name="location"
+                                                        placeholder="Location/City - State" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+                                                <div class="">
+                                                    <textarea name="Req" class="in" id="Req" placeholder="Requirement"
+                                                        required=""></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+                                                <div>
+                                                    <button type="button" class="submit"
+                                                        onclick="saveFormDataBE()">Submit Business Enquiry</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- <div class="modal-footer">
+                    
+                                    <button type="button" class="submit">Submit Business Enquiry</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- model end -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-header"> <button type="button" class="close" data-bs-dismiss="modal"
+                                    aria-label="Close"> x </button> </div>
+                            <div class="modal-content quick_enq">
+                                <h2 class="hidden-xs">JOB SEEKER</h2>
+                                <p>Provide us the required details below.</p>
+
+
+
+                                <div class="modal-body">
+                                    <form id="contact-form1" class="contact-form1">
+                                        <div class="rowsM1">
+                                            <div class="mr_b_10">
+                                                <div class="">
+                                                    <input type="text" class="in" id="name2" name="name"
+                                                        placeholder="Name" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="mr_b_10">
+                                                <div class="">
+                                                    <input type="text" class="in" id="phone2" name="phone"
+                                                        placeholder="Phone Number" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <input type="email" class="in" id="email2" name="email"
+                                                        placeholder="Email" required="">
+                                                </div>
+                                            </div>
+                                            <div class="mr_b_10">
+
+                                                <div class="">
+                                                    <input type="file" name="attachment" id="attachment" class="in"
+                                                        required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="mr_b_10">
+                                                <div>
+                                                    <button type="button" class="submit"
+                                                        onclick="saveFormDataJS()">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- <div class="modal-footer">
+        
+                        <button type="button" class="submit">Submit Business Enquiry</button>
+                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- model end -->
+
+                </div>
+                <!-- content end -->
+            </div>
+        </div>
+    </div>
+    <div class="gray-bg row2 pt-100 pb-100 md-pt-80 md-pb-80">
+
+        <div class="container1">
+            <div class="rows">
+                <div class=" form-part white-bg">
+                    <div class="sec-title mb-45">
+                        <div class="sub-title primary">CONTACT US</div>
+                        <h2 class="title mb-0">Get In Touch</h2>
+                    </div>
+                    <div id="form-messages"></div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="rows">
+                            <div class="pd-r-10">
+                                <div class="common-control form-group mb-0">
+                                    <input type="text" id="name" name="name" placeholder="Name" required="">
+                                </div>
+                            </div>
+                            <div class="pd-r-10">
+
+                                <div class="common-control form-group mb-0">
+                                    <input type="email" id="email" name="email" placeholder="Email" required="">
+                                </div>
+                            </div>
+                            <div class="pd-r-10">
+                                <div class="common-control form-group mb-0">
+                                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                </div>
+                            </div>
+                            <div class="pd-r-10">
+
+                                <div class="common-control form-group mb-0">
+                                    <input type="text" id="website" name="website" placeholder="Your Website"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="pd-r-10">
+                                <div class="common-control form-group mb-0">
+                                    <textarea name="message" id="msg" placeholder="Your Message Here"
+                                        required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="pd-r-10">
+
+                                <div>
+                                    <button type="button" class="readon" onclick="saveFormData()">Submit Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+html,
+body {
+    font-size: 16px;
+    color: #363636;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+    line-height: 1.7;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.sec-title .sub-title.primary {
+    color: #106eea;
+}
+
+.sec-title .sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #1c1b1b;
+    margin: 0 0 26px;
+    font-weight: 700;
+}
+
+.form-part {
+    padding: 60px 60px 60px 75px;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.container1 {
+    width: 650px;
+    margin: auto;
+}
+
+.pd-r-10 {
+    padding-right: 44px;
+    padding-top: 13px;
+
+}
+
+.mr_b_10 {
+    margin-bottom: 10px;
+}
+
+.rows {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+
+.rowsM1 {
+    flex-direction: column;
+    display: flex;
+
+
+}
+
+.row1 {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row2 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.gray-bg {
+    background: #f1f6fc;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    margin-top: 10px;
+    padding-top: 100px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+.contact-form .common-control input,
+.contact-form .common-control textarea {
+    background: #f1f6fc;
+    width: 480px;
+    height: 120px;
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    color: #363636;
+    font-size: 16px;
+}
+
+.contact-form .common-control input {
+    background: #f1f6fc;
+    width: 100%;
+    height: 35px;
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    color: #363636;
+    font-size: 16px;
+}
+
+.readon {
+    outline: none;
+    padding: 15px 29px;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    background: #106eea;
+    transition: all 0.3s ease;
+}
+
+/* .mar-16 {
+    margin-left: -8px;
+    margin-right: -8px;
+} */
+.formS {
+    height: 350px;
+    width: 560px;
+    text-align: center;
+}
+
+.icon-part {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 100%;
+    margin: 0 auto 25px;
+    text-align: center;
+    margin-top: 35px;
+    background: #acccf4;
+    position: relative;
+}
+
+.wholediv_row1 {
+    margin-top: 20px;
+}
+
+.font {
+    font-size: 70px !important;
+    color: #106eea;
+}
+
+.content-part .title {
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.content-part p {
+    margin: 0;
+    padding: 5px 0 10px 0;
+}
+
+.quick_enq h2 {
+    font-size: 30px;
+    color: #133979;
+    font-weight: 300;
+    margin: 0;
+}
+
+.in {
+    width: 90%;
+}
+
+.quick_enq .in {
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    color: rgba(51, 51, 51, .5);
+    height: 37px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 0;
+}
+
+.modal-header {
+    justify-content: flex-end !important;
+    padding: 0rem 0rem !important;
+
+}
+
+.close {
+    font-size: 40px;
+    /* position: absolute;
+    right: 16px;
+    top: -16px; */
+    padding-bottom: 45px;
+    z-index: 2;
+    background: #4ad6d0;
+    opacity: 1;
+    height: 35px;
+    width: 35px;
+    text-shadow: none;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+}
+
+.submit {
+    font-weight: 300;
+    background: #4ad6d0;
+    box-shadow: none;
+    color: #fff;
+    width: 90%;
+    font-size: 14px;
+}
+
+.modal-footer {
+    display: block !important;
+}
